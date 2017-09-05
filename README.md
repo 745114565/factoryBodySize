@@ -46,7 +46,7 @@ generate json for Factory setting
   
   
 * 打开根目录（factoryBodySize），并进入dos（windows）窗口。
-* run node.js ，结果会在result文件夹下输出，文件以 ‘ 工厂号_服装类型_性别_规格单名称.txt ’ 格式命名。
+* run ***`node index.js`*** ，结果会在result文件夹下输出，文件以 ‘ 工厂号_服装类型_性别_规格单名称.txt ’ 格式命名。
 
 # Summery
  
