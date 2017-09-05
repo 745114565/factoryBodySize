@@ -50,4 +50,4 @@ generate json for Factory setting
 
 # Summery
  
- 我们有更多的方式写小脚本，比如 `java`,`.net`,'php` 等语言，此处是利用 `NodeJs` 完成，有兴趣的可以多种方式实现。
+ 我们有更多的方式写小脚本，比如 `java`,`.net`,`php` 等语言，此处是利用 `NodeJs` 完成，有兴趣的可以多种方式实现。
