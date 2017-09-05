@@ -1,8 +1,10 @@
 # factoryBodySize
 generate json for Factory setting 
 
-# how to use
+# 项目简介
 
+
+# how to use
 * install nodeJs
 * config the input.csv
  
@@ -30,18 +32,22 @@ generate json for Factory setting
     72,141,149,64.5,63
  ```
  
-  **第一行是性别：1 男 ，0 女**
+  *第一行是性别：1 男 ，0 女**
   
-  **第二行是工厂 ID 比如ABBO**
+  *第二行是工厂 ID 比如ABBO**
   
-  **第三行是服装类型**
+  *第三行是服装类型**
   
-  **第四行是规格单名称**
+  *第四行是规格单名称**
   
-  **第五行除第一个 `,` 前外都是部位名称，第一个 `,` 前的值是为格式而设定，必须保留，你可以设任何值**
+  *第五行除第一个 `,` 前外都是部位名称，第一个 `,` 前的值是为格式而设定，必须保留，你可以设任何值**
   
-  **从第六行开始一下的部分，第一列是尺码，后面的列对应第五行的不为名称**
+  *从第六行开始一下的部分，第一列是尺码，后面的列对应第五行的不为名称**
   
   
-* into root dir
+* 打开根目录（factoryBodySize），并进入dos（windows）窗口。
 * run node.js ，结果会在result文件夹下输出，文件以 ‘ 工厂号_服装类型_性别_规格单名称.txt ’ 格式命名。
+
+# Summery
+ 
+ 我们有更多的方式写小脚本，比如 `java`,`.net`,'php` 等语言，此处是利用 `NodeJs` 完成，有兴趣的可以多种方式实现。
