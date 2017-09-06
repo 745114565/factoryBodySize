@@ -29,7 +29,7 @@ var rows = data.toString().split('\n');
 
 // 性别
 var gender = rows[0].replace("\r","");
-console.log('性别：' + gender);
+console.log('性别：' + (gender-0));
 // 工厂ID
 var factoryNumber = rows[1].replace("\r","");
 console.log('当前工厂是：' + factoryNumber);
@@ -60,7 +60,7 @@ var specification = {};
 	specification['_class'] = 'cn.com.icaifeng.model.produce.Specification';
 	specification['name'] = sName;
 	specification['factoryNumber'] = factoryNumber;
-	specification['gender'] = gender;
+	specification['gender'] = (gender - 0);
 	specification['status'] = 'NORMAL';
 	specification['clothing'] = clothingType;
 	specification['createTime'] = Date.parse(new Date());
@@ -85,7 +85,7 @@ for(i;i<len-1;i++){
 				bName = bName.replace("\r","");
 			
 			var kbName = kv[bName];
-			spec[kbName] = couloms[j];
+			spec[kbName] = (couloms[j] - 0);
 			standard[specNo] = spec;
 		}
 	}
@@ -100,6 +100,7 @@ console.log("准备写入文件");
 var date = new Date();
 var ts = date.getTime();
 var wPath = 'bodySize/result/'+factoryNumber+'_'+clothingType+'_'+gender+'_'+sName+'.txt';
+console.log(JSON.stringify(specification),specification);
 fs.writeFile(wPath, JSON.stringify(specification),  function(err) {
    if (err) {
        return console.error(err);
