@@ -46,8 +46,10 @@ generate json for Factory setting
   
   
 * 打开根目录（factoryBodySize），并进入dos（windows）窗口。
-* run ***`node index.js`*** ，结果会在result文件夹下输出，文件以 ‘ 工厂号_服装类型_性别_规格单名称.txt ’ 格式命名。
+* run ***`node index.js`*** or ***`node genarateByStream.js`*** ，结果会在result文件夹下输出，文件以 ‘ 工厂号_服装类型_性别_规格单名称.txt ’ 格式命名。
 
 # Summery
  
- 我们有更多的方式写小脚本，比如 `java`,`.net`,`php` 等语言，此处是利用 `NodeJs` 完成，有兴趣的可以多种方式实现。
+ 我们有更多的方式写小脚本，比如 `java`,`.net`,`php` 等语言，此处是利用 `NodeJs` 完成，有兴趣的可以多种方式实现。本文采用 NodeJs "fs" 模块中的 “file”（index.js)和"Streame"(genarateByStream.js)实现。
+ 
+ ***万望大神指导**
