@@ -4,8 +4,8 @@ var fs = require("fs");
 
 console.log('开始读取文件 ---------- 同步读取');
 
-var k_v_path = 'bodySize/k_v.csv';
-var bodySize_path = 'bodySize/input.csv';
+var k_v_path = 'specification/k_v.csv';
+var bodySize_path = 'specification/input.csv';
 
 //读取key value 文件
 var k_v_data = fs.readFileSync(k_v_path);
@@ -70,7 +70,7 @@ var standard = {};
 // 数组长度
 var len = rows.length;
 // 尺寸开始行
-var i = 6 ;
+var i = 5 ;
 for(i;i<len-1;i++){
 	var row = rows[i].replace("\r","");
 	console.log(row);
@@ -85,6 +85,7 @@ for(i;i<len-1;i++){
 				bName = bName.replace("\r","");
 			
 			var kbName = kv[bName];
+
 			spec[kbName] = (couloms[j] - 0);
 			standard[specNo] = spec;
 		}
@@ -99,7 +100,7 @@ specification['standard'] = standard;
 console.log("准备写入文件");
 var date = new Date();
 var ts = date.getTime();
-var wPath = 'bodySize/result/'+factoryNumber+'_'+clothingType+'_'+gender+'_'+sName+'.txt';
+var wPath = 'specification/result/'+factoryNumber+'_'+clothingType+'_'+gender+'_'+sName+'.txt';
 console.log(JSON.stringify(specification),specification);
 fs.writeFile(wPath, JSON.stringify(specification),  function(err) {
    if (err) {
