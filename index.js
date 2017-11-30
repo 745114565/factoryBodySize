@@ -51,7 +51,7 @@ for(var i=1;i<n_len;i++){
 		bName = bName.replace("\r","");
 	// }
 	var kbName = kv[bName];
-	if(!kbName) {throw new Error('该部位未定义: ' + bName)};
+	if(!kbName) {throw new Error('该部位未定义: ' + bName);}
 	bodyItems[kbName] = bName;
 }
 

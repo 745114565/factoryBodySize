@@ -1,0 +1,65 @@
+{
+  "_class": "cn.com.icaifeng.model.produce.Specification",
+  "name": "CY-A体",
+  "factoryNumber": "AABJ",
+  "gender": 1,
+  "status": "NORMAL",
+  "clothing": "A",
+  "createTime": 1512015951000,
+  "bodyItems": {
+    "chest": "胸围",
+    "waist": "腰围",
+    "ass": "臀围",
+    "shoulder": "肩宽",
+    "frontLength": "前长",
+    "backLength": "后长",
+    "sleeve": "袖长"
+  },
+  "standard": {
+    "165/44A": {
+      "chest": 97,
+      "waist": 82,
+      "ass": 93,
+      "shoulder": 43.5,
+      "frontLength": 73.5,
+      "backLength": 69.5,
+      "sleeve": 59
+    },
+    "170/46A": {
+      "chest": 101,
+      "waist": 86,
+      "ass": 97,
+      "shoulder": 44.5,
+      "frontLength": 75.5,
+      "backLength": 71.5,
+      "sleeve": 60.5
+    },
+    "175/48A": {
+      "chest": 105,
+      "waist": 90,
+      "ass": 101,
+      "shoulder": 45.5,
+      "frontLength": 77.6,
+      "backLength": 73.5,
+      "sleeve": 62
+    },
+    "180/50A": {
+      "chest": 109,
+      "waist": 94,
+      "ass": 105,
+      "shoulder": 46.5,
+      "frontLength": 79.6,
+      "backLength": 75.5,
+      "sleeve": 63.5
+    },
+    "185/52A": {
+      "chest": 113,
+      "waist": 98,
+      "ass": 109,
+      "shoulder": 47.5,
+      "frontLength": 81.7,
+      "backLength": 77.5,
+      "sleeve": 65
+    }
+  }
+}
